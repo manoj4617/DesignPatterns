@@ -1,0 +1,1 @@
+/usr/bin/g++-13  -Wall -Wextra CMakeFiles/GameOfLife.dir/game.cpp.o -o GameOfLife  -lstdc++fs 

@@ -1,0 +1,3 @@
+/home/manoj4617/DesignPatterns/C++/GameOfLife/build/CMakeFiles/GameOfLife.dir
+/home/manoj4617/DesignPatterns/C++/GameOfLife/build/CMakeFiles/edit_cache.dir
+/home/manoj4617/DesignPatterns/C++/GameOfLife/build/CMakeFiles/rebuild_cache.dir
