@@ -1,0 +1,34 @@
+# Compiled Object files
+*.o
+*.ko
+*.obj
+*.elf
+*.in
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.Plo
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Generated files and directories
+build/
+bin/
+ccm_wa/
+LocalUserBuiltArea-Linux-*/
+.vscode/
+.DS_Store
+
