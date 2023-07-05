@@ -92,6 +92,7 @@ GameOfLife_EXTERNAL_OBJECTS =
 
 GameOfLife: CMakeFiles/GameOfLife.dir/game.cpp.o
 GameOfLife: CMakeFiles/GameOfLife.dir/build.make
+GameOfLife: libgol.a
 GameOfLife: CMakeFiles/GameOfLife.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/manoj4617/DesignPatterns/C++/GameOfLife/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable GameOfLife"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GameOfLife.dir/link.txt --verbose=$(VERBOSE)

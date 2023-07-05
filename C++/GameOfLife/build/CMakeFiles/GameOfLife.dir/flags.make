@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++-13
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/Headers -I/Libs
 
 CXX_FLAGS =  -Wall -Wextra -std=gnu++17 -g -O0 -Wall
 

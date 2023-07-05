@@ -25,8 +25,8 @@
 *.app
 
 # Generated files and directories
-build/
-bin/
+**/build/
+**/bin/
 ccm_wa/
 LocalUserBuiltArea-Linux-*/
 .vscode/

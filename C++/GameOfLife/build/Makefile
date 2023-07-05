@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named gol
+
+# Build rule for target.
+gol: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gol
+.PHONY : gol
+
+# fast build rule for target.
+gol/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gol.dir/build.make CMakeFiles/gol.dir/build
+.PHONY : gol/fast
+
+#=============================================================================
 # Target rules for targets named GameOfLife
 
 # Build rule for target.
@@ -128,6 +141,30 @@ GameOfLife: cmake_check_build_system
 GameOfLife/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/build
 .PHONY : GameOfLife/fast
+
+Libs/MatrixOperation.o: Libs/MatrixOperation.cpp.o
+.PHONY : Libs/MatrixOperation.o
+
+# target to build an object file
+Libs/MatrixOperation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gol.dir/build.make CMakeFiles/gol.dir/Libs/MatrixOperation.cpp.o
+.PHONY : Libs/MatrixOperation.cpp.o
+
+Libs/MatrixOperation.i: Libs/MatrixOperation.cpp.i
+.PHONY : Libs/MatrixOperation.i
+
+# target to preprocess a source file
+Libs/MatrixOperation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gol.dir/build.make CMakeFiles/gol.dir/Libs/MatrixOperation.cpp.i
+.PHONY : Libs/MatrixOperation.cpp.i
+
+Libs/MatrixOperation.s: Libs/MatrixOperation.cpp.s
+.PHONY : Libs/MatrixOperation.s
+
+# target to generate assembly for a file
+Libs/MatrixOperation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gol.dir/build.make CMakeFiles/gol.dir/Libs/MatrixOperation.cpp.s
+.PHONY : Libs/MatrixOperation.cpp.s
 
 game.o: game.cpp.o
 .PHONY : game.o
@@ -162,6 +199,10 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... GameOfLife"
+	@echo "... gol"
+	@echo "... Libs/MatrixOperation.o"
+	@echo "... Libs/MatrixOperation.i"
+	@echo "... Libs/MatrixOperation.s"
 	@echo "... game.o"
 	@echo "... game.i"
 	@echo "... game.s"

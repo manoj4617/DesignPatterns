@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <vector>
+#include <memory>
 
 
 #ifdef _WIN32
@@ -25,8 +26,6 @@ void gotoxy(int x, int y) {
 #define MAX_ROWS 1000
 #define MAX_COLS 1000
 
-std::vector<std::vector<int>> matrix;
-int rows;
-int columns;
+
 
 

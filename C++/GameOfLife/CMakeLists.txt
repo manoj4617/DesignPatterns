@@ -1,13 +1,22 @@
-cmake_minimum_required (VERSION 3.8)
+cmake_minimum_required (VERSION 3.1)
 
 project ("GameOfLife")
 
-
-# Add source to this project's executable.
-add_executable (GameOfLife "game.cpp" "Headers/GameOfLife.h" "Headers/Matrix.h")
-
-target_link_libraries(GameOfLife PRIVATE stdc++fs)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra")
+
+include_directories("/Headers" "/Libs")
+
+file(GLOB SOURCES "*.cpp")
+file(GLOB LIBS "Libs/*")
+
+# Add library files
+add_library(gol ${LIBS})
+# Add executable
+add_executable(GameOfLife ${SOURCES})
+# Link libs with source files
+target_link_libraries(GameOfLife gol)
+
 set_property(TARGET GameOfLife PROPERTY CXX_STANDARD 17)
 
 
