@@ -27,8 +27,6 @@
 # Generated files and directories
 **/build/
 **/bin/
-ccm_wa/
-LocalUserBuiltArea-Linux-*/
-.vscode/
+**/.vscode/
 .DS_Store
 

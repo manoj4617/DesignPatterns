@@ -18,7 +18,7 @@ public:
 	}
 
 	void UpdateMatrix();
-	void BuildInitialMatrix();
+	void BuildInitialMatrix(std::vector<std::pair<int,int>>);
 	void PrintMatrix();
 
 };

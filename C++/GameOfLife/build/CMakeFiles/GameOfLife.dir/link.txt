@@ -1,1 +1,0 @@
-/usr/bin/g++-13  -Wall -Wextra -rdynamic CMakeFiles/GameOfLife.dir/game.cpp.o -o GameOfLife  libgol.a 
